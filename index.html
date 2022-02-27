@@ -6,9 +6,26 @@
   <meta charset="utf-8">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
+<div id="themedark">
 <body>
 
   <nav class="nav">
+    <div id="button">
+      <input type="button" value="Dark mode on" id="darkmode" onclick="f()">
+      <script>
+        function f() {
+          if (darkmode.value === 'Dark mode off') {
+            darkmode.value = 'Dark mode on'
+            document.getElementById('themelight').setAttribute('id', 'themedark')
+
+          }
+          else {
+            darkmode.value = 'Dark mode off'
+            document.getElementById('themedark').setAttribute('id', 'themelight')
+          }
+        }
+      </script>
+    </div>
     <ul id="navlist">
       <li>
         <a href="index.html" class="button">Home</a>
@@ -48,4 +65,5 @@
 <footer>
   <a href="https://www.linkedin.com/in/ryanfinnuncp" target="_blank" >Linkedin</a>
 </footer>
+</div>
 </html>

@@ -1,15 +1,16 @@
 
 
-body { color: black;
-		background-color: grey;
-		text-align: center;
-	  font-family: Calibri, sans-serif;
-		margin: 0;
+body {
+	color: white;
+	background-color: #212121;
+	text-align: center;
+  font-family: Calibri, sans-serif;
+	margin: 0;
 }
 
-head { background-color: black;
+head {
 	padding: 0 2% 2% 0;
-	color: white;
+	color: inherit;
 }
 
 ul{
@@ -19,7 +20,7 @@ ul{
 }
 
 #div1{
-	background-color: lightgrey;
+	background-color: #373737;
 	width: 75%;
 	align: center;
 	padding: 1em;
@@ -28,16 +29,23 @@ ul{
 	font-size: 1.5em;
 }
 
+#div1 a {
+	color: inherit;
+	text-decoration: underline;
+}
+
 .nav{
 	background-color: black;
 	width: 100%;
+	color: white;
 }
+
 #navlist li{
 	display: inline-block;
 	padding: 1em;
 	align: center;
 	font-size: 1.75em;
-	color: white;
+	color: inherit;
 
 }
 
@@ -48,10 +56,10 @@ ul #navlist {
 }
 
 .navbar {
-	color: white;
 	display: inline;
 	width: 100%;
 }
+
 .nav li a {
 	display: inline-block;
 	list-style-type: none;
@@ -74,8 +82,8 @@ ul #navlist {
 	display: inline-block;
 	font-size: 1.5em;
 	background-color: inherit;
-	color: white;
-	border: lightgrey;
+	color: inherit;
+	border: inherit;
 	border-style: solid;
 	border-width: thin;
 	border-radius: 5%;
@@ -93,37 +101,40 @@ footer a {
 	color: inherit;
 	padding: 1em;
 	align: center;
+	text-decoration: none;
 }
 
 #themelight {
 	background-color: white;
+	color: black;
 }
 
-#themelight .nav{
+#themelight #div1 {
 	background-color: lightgrey;
-	color: black;
+	color: inherit;
 }
 
-#themelight footer{
+#themelight .nav {
 	background-color: lightgrey;
-	color: black;
+	color: inherit;
 }
 
-#themedark {
-	background color: darkgrey;
+#themelight footer {
+	background-color: lightgrey;
+	color: inherit;
 }
 
-a {
-	color: black;
-	text-decoration: none;
-	width: 100%;
+#themelight body {
+	background-color: inherit;
+	color: inherit;
 }
-
 
 h1 {
 	font-family: Verdana, sans-serif;
 	font-size: 5em;
 }
 
-h2 { font-family: Verdana, sans-serif; padding-top: 1%;
+h2 {
+	font-family: Verdana, sans-serif;
+	padding-top: 1%;
 }
