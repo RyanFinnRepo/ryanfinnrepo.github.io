@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<div id="themedark">
 <head>
   <title>Ryan Finn</title>
   <meta charset="utf-8">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
-
-  <div id="themedark">
-
   <body>
-
     <nav class="nav">
       <div id="button">
         <input type="button" value="Dark mode on" id="darkmode" onclick="f()">
@@ -19,11 +15,13 @@
             if (darkmode.value === 'Dark mode off') {
               darkmode.value = 'Dark mode on'
               document.getElementById('themelight').setAttribute('id', 'themedark')
+              localStorage.setItem('theme', 'themedark')
 
             }
             else {
               darkmode.value = 'Dark mode off'
               document.getElementById('themedark').setAttribute('id', 'themelight')
+              localStorage.setItem('theme', 'themelight')
             }
           }
         </script>
@@ -62,6 +60,12 @@
   <footer>
     <a href="https://www.linkedin.com/in/ryanfinnuncp" target="_blank" >Linkedin</a>
   </footer>
+  <script>
+    if(localStorage.getItem('theme') === 'themelight') {
+      document.getElementById('themedark').setAttribute('id', 'themelight')
+      darkmode.value = 'Dark mode off'
+    }
+  </script>
 </div>
 
 </html>
